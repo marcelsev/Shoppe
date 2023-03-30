@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/contact.css" />
-    <title>Contact Us</title>
+    <link rel="stylesheet" href="./css/myAccount.css" />
+    <title>MyAccount</title>
   </head>
   <body>
     <div class="container">
@@ -29,44 +29,27 @@
           </nav>
         </section>
       </header>
-      <section class="container-formulaire">
-        <div class="card">
-          <div class="card-header">
-            <h2>Contact Us</h2>
-            <h4>
-              Say Hello send us your thoughts about our producte or share your
-              ideas with our team
-            </h4>
+      <div class="container-mA">
+        <main class="contact-us">
+          <div class="title">
+            <h2>My Account</h2>
           </div>
-          <div class="card-body">
-            <form action="" class="form-container form-contact-us">
-              <input type="text" name="nom" id="nom" placeholder="Firs name" />
-
-              <input
-                type="text"
-                name="prenom"
-                id="prenom"
-                placeholder=" last name"
-              />
-              <input type="email" name="email" id="email" placeholder="email" />
-              <select name="subject" id="subject">
-                <option value="" selected hidden disabled>Subject</option>
-              </select>
-              <textarea
-                name="message"
-                id="message"
-                cols="8"
-                rows="10"
-                placeholder="message"
-              ></textarea>
-              <div class="btn-container">
-                <button class="btn-send">Send</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
-
+          <div class="pic"><img src="./images/Swich.png" alt="" /></div>
+          <form action="" class="contact-form my-contact-form">
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+            <input type="checkbox" name="remember" id="rememeber" />
+            <label for="remember">Remember me</label>
+            <button class="btn">sign in</button>
+            <h3>Have you forgotten your password?</h3>
+          </form>
+        </main>
+      </div>
       <footer>
         <div><img src="./images/Line 14.png" class="lineg" alt="" /></div>
         <div class="contact-nav">

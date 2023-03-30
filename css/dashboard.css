@@ -5,10 +5,9 @@
   --bg-btnprod-color: #d8d8d8;
   --bg-textv-color: #a18a68;
 }
-
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 body {
@@ -25,7 +24,6 @@ a {
 
 header {
   width: 100%;
-  height: 25vh;
 }
 .navigation {
   width: 100%;
@@ -53,101 +51,36 @@ nav {
   display: flex;
   justify-content: space-evenly;
 }
-.container-formulaire {
-  width: 100%;
-}
-.card-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 200px;
-  justify-content: space-evenly;
-}
-h2 {
-  font-size: 33px;
-  font-weight: 500;
-}
-h4 {
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.card-header h4 {
-  width: 500px;
-  text-align: center;
-}
-
-.card-body {
-  padding: 60px 100px;
-}
-.form-container {
+.container-dash {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-around;
 }
-.form-container input[type="text"],
-input[type="email"],
-select {
-  flex-basis: 45%;
+
+.container-dash input[type="radio"] {
+  display: none;
 }
-input[type="text"],
-input[type="email"],
-select,
-textarea {
-  border: none;
-  border-bottom: 1.6px solid var(--bg-btnprod-color);
-  height: 40px;
-  outline: none;
+.container-dash label {
+  cursor: pointer;
+  padding: 8px 16px;
+  border-bottom: 2px solid var(--bg-btnprod-color);
 }
-::placeholder {
-  font-weight: 400;
-  text-transform: capitalize;
-  color: var(--bg-btnprod-color);
+.container-dash .tab {
+  height: 500px;
+  order: 1;
+  display: none;
 }
-.form-container textarea {
-  flex-basis: 100%;
-}
-.form-contact-us {
-  height: 600px;
-}
-.btn-container {
+.tab-address {
   display: flex;
-  justify-content: center;
-  width: 100%;
+  justify-content: space-between;
+  font-size: 10px;
+  height: 200px;
 }
-button {
-  width: 500px;
-  height: 53px;
-  border: none;
-  border-radius: 4px;
-  text-transform: uppercase;
-  background-color: var(--bg-main-color);
-  color: var(--bg-second-color);
+.container-dash a {
+  color: var(--bg-textv-color);
 }
-@media screen and (max-width: 480px) {
-  .container {
-    width: 90%;
-  }
-  .card-header {
-    height: 120px;
-    align-items: flex-start;
-  }
-  .card-header h4 {
-    display: none;
-  }
-  .card-body {
-    padding: 0 0 60px 0;
-  }
-  .form-container input[type="text"],
-  input[type="email"],
-  select {
-    flex-basis: 100%;
-  }
-  .form-contact-us {
-    height: 700px;
-  }
+.container-dash input[type="radio"]:checked + label + .tab {
+  display: block;
 }
 
 footer {
